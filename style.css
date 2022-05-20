@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+.slider .article {
+
+    font-size: 0.9rem;
+    display: inline-block;
+    vertical-align: top;
+    border: 0.5px solid grey;
+    margin: 5px;
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+
+}
+
+.review-wrapper {
+    position: relative;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.container {
+
+    width: 100%;
+    max-width: 1110px;
+    height: 320px;
+    margin: auto;
+    overflow: hidden;
+
+    border: 1px solid grey;
+}
+
+.container .slider {
+
+    position: relative;
+    width: calc(14*400px);
+    transition: all 0.5s ease;
+
+}
+
+.container div.previous-button {
+    position: absolute;
+    width: 36px;
+
+    left: -7px;
+    top: 40%;
+}
+
+.container div.next-button {
+    position: absolute;
+    top: 40%;
+    right: -7px;
+    width: 36px;
+}
+
+.next-button>svg,
+.previous-button>svg {
+    fill: #a3a0a075;
+    transition: all 0.3s ease;
+}
+
+.next-button>svg:hover,
+.previous-button>svg:hover {
+    fill: #a3a0a0c7;
+    cursor: pointer;
+
+}
+
+.inactive-arrow>svg {
+    fill: #d7d7d75e;
+
+}
+
+.inactive-arrow>svg:hover {
+    fill: #d7d7d75e;
+    cursor: inherit;
+
+}
+
+.rating-block {
+    margin-bottom: 10px;
+}
